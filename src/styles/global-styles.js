@@ -10,12 +10,12 @@ export const GlobalStyles = createGlobalStyle`
 
   --ff-primary: 'Calibri',monospace;
   --ff-secondary: 'Public Sans', sans-serif;
-  --fs-h1: 3rem;
-  --fs-h2: 1.55rem;
-  --fs-h3: 1.25rem;
-  --fs-h4: 0.875rem;
-  --fs-body: 1.25rem;
-  --spacing: 0.1rem;
+  --fs-h1: 3.125rem; //50px
+  --fs-h2: 1.875rem; //30px
+  --fs-h3: 1.25rem;  //20px
+  --fs-h4: 0.875rem; //14px
+  --fs-body: 1.25rem; //20px
+  --spacing: 0.1rem;  //1.6px
 
   --fw-reg: 300;
   --fw--semibold: 600;
@@ -40,7 +40,7 @@ export const GlobalStyles = createGlobalStyle`
 body{
   margin: 0;
   padding: 0;
-  background: var(--clr-tertiary);
+  background: white;
   color: var(--clr-secondary);
   font-family:var(--ff-primary) ;
   }
