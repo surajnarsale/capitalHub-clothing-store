@@ -1,13 +1,19 @@
 import React from 'react';
 import { GlobalStyles } from './styles/global-styles';
-import { Product } from './components';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
 const App = () => {
   return (
     <>
       <GlobalStyles />
-      <Product />
-      <h1>Capital-Hub</h1>
+      <Router>
+        <Switch>
+          <Route to="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 };
