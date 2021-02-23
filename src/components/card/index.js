@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Container,
+  Wrapper,
   MediaWrapper,
   Name,
   Actions,
@@ -12,9 +13,12 @@ import {
 import { IoMdStarHalf, IoMdStarOutline, IoMdStar } from 'react-icons/io';
 
 const Card = ({ children, ...restProps }) => {
-  return <Container {...restProps}>{children}</Container>;
+  return <Wrapper {...restProps}>{children}</Wrapper>;
 };
 
+Card.Container = function CardContainer({ children, ...restProps }) {
+  return <Container {...restProps}>{children}</Container>;
+};
 Card.Media = function CardMedia({ src }) {
   return <MediaWrapper src={src}></MediaWrapper>;
 };
@@ -38,11 +42,11 @@ Card.Actions = function CardActions({ children, ...restProps }) {
 Card.Ratings = function CardRatings() {
   return (
     <RatingsWrapper>
-      <IoMdStar size="0.7em" />
-      <IoMdStar size="0.7em" />
-      <IoMdStar size="0.7em" />
-      <IoMdStarHalf size="0.7em" />
-      <IoMdStarOutline size="0.7em" />
+      <IoMdStar color="var(--clr-primary)" size="0.7em" />
+      <IoMdStar color="var(--clr-primary)" size="0.7em" />
+      <IoMdStar color="var(--clr-primary)" size="0.7em" />
+      <IoMdStarHalf color="var(--clr-primary)" size="0.7em" />
+      <IoMdStarOutline color="var(--clr-primary)" size="0.7em" />
     </RatingsWrapper>
   );
 };

@@ -1,23 +1,30 @@
 import React from 'react';
 import { Card } from '../components';
 import { MdAddShoppingCart } from 'react-icons/md';
-
+import ProductData from '../fixtures/products.json';
+import Showcase from '../components/Showcase';
 const Products = () => {
   return (
     <>
-      <Card>
-        <Card.Media
-          src={
-            'https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80'
-          }
-        />
-        <Card.Name>Jordan Edition</Card.Name>
-        <Card.Description details={'Nike shoes'} price={'$300'} />
-        <Card.Actions>
-          <Card.Ratings stars={2} />
-          <MdAddShoppingCart size="25px" />
-        </Card.Actions>
-      </Card>
+      <Showcase title={'Best Seller'} button={'SHOW ALL'} />
+      <Card.Container>
+        {ProductData.map((product) => {
+          return (
+            <Card key={product.id}>
+              <Card.Media src={product.image} />
+              <Card.Name>{product.Brand}</Card.Name>
+              <Card.Description
+                details={product.description}
+                price={product.price}
+              />
+              <Card.Actions>
+                <Card.Ratings stars={product.rating} />
+                <MdAddShoppingCart size="25px" />
+              </Card.Actions>
+            </Card>
+          );
+        })}
+      </Card.Container>
     </>
   );
 };

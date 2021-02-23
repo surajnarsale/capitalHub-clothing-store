@@ -40,7 +40,7 @@ export const GlobalStyles = createGlobalStyle`
 body{
   margin: 0;
   padding: 0;
-  background: white;
+  background: var(--clr-light);
   color: var(--clr-secondary);
   font-family:var(--ff-primary) ;
   }

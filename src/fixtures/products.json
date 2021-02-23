@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+    "Brand": "HRX by Hrithik Roshan",
+    "description": "Men Teal Blue  T-shirt",
+    "price": "Rs. 349",
+    "rating": 3
+  },
+  {
+    "id": 2,
+    "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1894413/2017/6/20/11497943671766-WROGN-Men-Grey-Melange-Self-Design-Round-Neck-T-shirt-881497943671356-1.jpg",
+    "Brand": "WROGN",
+    "description": "Men Grey T-shirt",
+    "price": "Rs. 839",
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg",
+    "Brand": "HRX by Hrithik Roshan",
+    "description": "Men Teal Blue  T-shirt",
+    "price": "Rs. 349",
+    "rating": 3
+  },
+  {
+    "id": 4,
+    "image": "https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1894413/2017/6/20/11497943671766-WROGN-Men-Grey-Melange-Self-Design-Round-Neck-T-shirt-881497943671356-1.jpg",
+    "Brand": "WROGN",
+    "description": "Men Grey T-shirt",
+    "price": "Rs. 839",
+    "rating": 4
+  }
+]
