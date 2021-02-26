@@ -5,10 +5,6 @@ export default function Home() {
   return (
     <>
       <Products />
-      <Products />
-      <Products />
-      <Products />
-      <Products />
     </>
   );
 }
