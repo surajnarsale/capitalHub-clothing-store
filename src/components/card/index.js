@@ -26,10 +26,16 @@ Card.Name = function CardName({ children, ...restProps }) {
   return <Name {...restProps}>{children}</Name>;
 };
 Card.Description = function CardDescription({ details, price }) {
+  function removeTags(str) {
+    if (str === null || str === '') {
+      return false;
+    } else str.toString();
+    return str.replace(/(<([^>]+)>)/gi, '');
+  }
   return (
     <>
       <DescriptionWrapper>
-        <Details>{details}</Details>
+        <Details>{removeTags(details)}</Details>
         <Price>{price}</Price>
       </DescriptionWrapper>
     </>

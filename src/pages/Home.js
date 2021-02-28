@@ -1,10 +1,12 @@
 import React from 'react';
 import { Products } from '../containers';
+import { Navbar } from '../components';
 
-export default function Home() {
+export default function Home({ products }) {
   return (
     <>
-      <Products />
+      <Navbar />
+      <Products products={products} />
     </>
   );
 }
