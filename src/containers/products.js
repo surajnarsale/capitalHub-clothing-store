@@ -2,7 +2,9 @@ import React from 'react';
 import { Card } from '../components';
 import { MdAddShoppingCart } from 'react-icons/md';
 import Showcase from '../components/Showcase';
-const Products = ({ products }) => {
+import { IconButton } from '@material-ui/core';
+
+const Products = ({ products, onAddToCart }) => {
   console.log(products);
   return (
     <>
@@ -19,7 +21,12 @@ const Products = ({ products }) => {
               />
               <Card.Actions>
                 <Card.Ratings stars={product.rating} />
-                <MdAddShoppingCart size="25px" />
+                <IconButton
+                  aria-label="Add to Cart"
+                  onClick={() => onAddToCart(product.id, 1)}>
+                  {' '}
+                  <MdAddShoppingCart size="25px" />
+                </IconButton>
               </Card.Actions>
             </Card>
           );
